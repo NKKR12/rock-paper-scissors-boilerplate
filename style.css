@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+h1{
+    color: rgb(90, 37, 192);
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10vh
+}
+
+body div{
+    display: flex;
+}
+
+div#game-image{
+    margin-left: 13vw;
+    margin-top: 5vh;
+}
+
+img#play-button{
+    margin-top: 50vh;
+    margin-left: 20vh;
+    cursor: pointer;
+}
+
+img#play-button:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+div span{
+    color: white;
+    margin-top: 50vh;
+    margin-left: 16px;
+    font-size: 2.5vh;
+    font-weight: 900;
+    position: relative;
+    /* bottom: 4px; */
+}
+
+div#play-area{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#score {
+    display: block;
+    margin-top: 10vh;
+}
+
+div#score span{
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+div#score img{
+    position: relative;
+    height: 70vh;
+    left: 33px;
+    top: 20px;
+}
+
+div#play-area div#user-area, div#computer-area{
+    border: 2px solid #ffc434;
+    color: white;
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    margin-top: 25vh;
+}   
+
+#user-answer{
+    height: 43vh;
+}
+
+div#user-area div, div#computer-area div{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+div#end-message{
+    margin-top: 10vh;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    position: fixed;
+    top: 0px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;   
+    background-color: rgba(226, 203, 203, 0.592);
+}
+
+span#play-again{
+    cursor: pointer;
+    color: white;
+    background-color: #ffc434;
+    border-radius: 3px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 45vw;
+    margin-top: 5vh;
+    font-weight: 900;
+    position: absolute;
+    bottom: 80px;
+    z-index: 5;
+    font-size: 3vh;
+}
+
+#end-text{
+    color: white;
+    font-size: 20vh;
+    position: absolute;
+    bottom: 40vh;
+    font-weight: 900;
+    background-color:#000000;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    margin-left: 25vw;
+}
